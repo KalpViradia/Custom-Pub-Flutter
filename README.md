@@ -1,39 +1,30 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# 📱 Custom Dart Calculator
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A simple Dart-based calculator class that performs basic arithmetic operations. Perfect for use in Flutter or Dart CLI projects.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+---
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## ✨ Features
 
-## Features
+- ✅ Addition
+- ✅ Subtraction
+- ✅ Multiplication
+- ✅ Division (with zero-check)
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+---
 
-## Getting started
+## 📦 Usage
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the `Calculator` class into your Dart/Flutter project:
 
 ```dart
-const like = 'sample';
-```
+import 'package:your_package_name/calculator.dart'; // update with your actual package path
 
-## Additional information
+void main() {
+  final calc = Calculator();
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+  print(calc.add(5, 3));        // 8
+  print(calc.subtract(10, 4));  // 6
+  print(calc.multiply(2, 6));   // 12
+  print(calc.divide(10, 2));    // 5.0
+}
